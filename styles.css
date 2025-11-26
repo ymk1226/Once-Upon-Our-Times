@@ -1,0 +1,668 @@
+html {
+    scroll-padding:50px;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    background-color: #f1f1f1;
+    font-size: 16px;
+    color:#2f2d2c;
+    font-family: "Raleway", sans-serif; 
+    margin: 0;
+    padding: 40px;
+    max-width: 95%;
+}
+::selection{
+  background-color: pink;
+}
+
+#toptitle{
+  margin:0;
+  padding:0;
+}
+
+h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #2f2d2c;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    color: #2f2d2c;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+h3 {
+    color:#2f2d2c;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+h4 {
+    color:#2f2d2c;
+    font-family: "Merriweather", serif; 
+    font-weight: 400;
+    font-size: 16px;
+}
+
+p {
+    font-family: "raleway", sans-serif;
+    color:#2f2d2c;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.tophome {
+  display:flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0 32px;
+  font-size:26px;
+  font-family:"Merriweather", serif;
+ }
+
+ .header h1 {
+    text-align:center;
+    margin: 0px;
+    padding: 0px;
+}
+.header h2 {
+    text-align:center;
+    margin: 10px 5px 10px 5px;
+}
+
+li {
+    color:#2f2d2c;
+    font-family: "raleway", sans-serif;
+    font-size: 16px;
+}
+
+.hotellink:link {
+    color:#2f2d2c;
+}
+.hotellink:visited {
+    color:green;
+}
+.hotellink:hover {
+    color:#47859c;
+}
+.hotellink:active {
+    color:yellow;
+}
+
+.registrylink:link {
+    color:#2f2d2c;
+}
+.registrylink:visited {
+    color:green;
+}
+.registrylink:hover {
+    color:#47859c;
+}
+.registrylink:active {
+    color:yellow;
+}
+
+.savethedatebutton {
+
+    background-color: #f1f1f1;    /* button color */
+    color:#2f2d2c;              /* text color */
+    border: 4px solid #2f2d2c;               /* hides the default border */
+    padding: 6px 30px;          /* space between button's text and edge */
+    border-radius: 0px;         /* curved edges instead of square */
+    cursor: pointer;            /* makes the cursor change when over button */
+    text-align: center;
+    margin: 5px;
+    min-width: 160px;
+    font-size: 16px;
+    font-family:"raleway", sans-serif;
+    box-sizing: border-box;
+}
+
+.rsvpbutton {
+    background-color:#2f2d2c;    /* button color */
+    color: #f1f1f1;               /* text color */
+    border: none;               /* hides the default border */
+    padding: 10px 30px;          /* space between button's text and edge */
+    border-radius: 0px;         /* curved edges instead of square */
+    cursor: pointer;            /* makes the cursor change when over button */
+    text-align: center;
+    margin: 5px;
+    min-width: 160px;
+    font-size: 16px;
+    font-family:"raleway", sans-serif;
+    box-sizing:border-box;
+}
+
+.savethedatebutton:hover {
+    background-color:#c73d34;
+    box-sizing:border-box;
+    border: 4px solid #c73d34;
+    color:#f1f1f1;
+    font-weight: 600;
+    font-family:"raleway", sans-serif;
+}
+
+.rsvpbutton:hover {
+    background-color:#47859c;
+    color:#f1f1f1;
+    font-weight:600;
+    font-family:"raleway", sans-serif;
+}
+.upperthickerdivider {
+  border-top: 6px solid #2f2d2c;
+  margin: 32px auto 8px auto;
+}
+/* ***** DIVIDERS ***** */
+
+.upperdivider {
+  /*height:6px;
+  background:black;
+  margin: 8px auto;
+  */
+  border-top: 4px solid #2f2d2c;
+  margin: 8px auto;
+}
+
+.divider {
+  border-top: 4px solid #2f2d2c;
+  margin: 8px auto;
+}
+
+.thickerdivider {
+  border-top: 6px solid #2f2d2c;
+  margin: 8px auto;
+}
+
+.thinnerdivider{
+  border-top: 2px solid #2f2d2c;
+  margin: 8px auto;
+}
+
+.horizontaldivider{
+  border-left: 2px solid #2f2d2c;
+  margin: 50px;
+  height: 700px;
+}
+
+
+
+.header { 
+  display:flex;
+  justify-content: center;  
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+#header-img {
+  display: block;
+  margin: auto;
+  width:350px;
+  max-width: 95%;
+}
+#header-button {
+    display:flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/* ABOUT SECTION */
+
+.aboutwhatcombine{
+  display: flex;
+  justify-content:center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 0;
+}
+.about-container {
+  width: 75%;
+  margin: 0;
+  text-align:center;
+}
+.about-text p {
+  text-align:justify;
+}
+#about {
+  text-align:left;
+}
+#map-img {
+  display:block;
+  margin: 0;
+  max-width: 480px;
+}
+
+
+.whattoexpect-container{
+  text-align:center;
+  background-color: #2f2d2c;
+}
+
+.whattoexpect-text li{
+  color:#f1f1f1;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.whattoexpect-text ul{
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.whattoexpect-text{
+  max-width: 400px;
+  padding: 0px 16px 8px;
+  color: #f1f1f1;
+}
+
+#whattoexpect {
+  color:#f1f1f1;
+}
+
+
+.schedulecontainer{
+  display:flex;
+  justify-content: center;
+
+}
+#schedule{
+  text-align: center;
+}
+.ceremonyflex img, .receptionflex img, .danceflex img{
+  width:100%;
+  max-width:350px;
+  height:auto;
+}
+
+.ceremonyflex,.receptionflex,.danceflex{
+text-align:center;  
+max-width: 100%;
+}
+
+
+.headerlink {
+    position: fixed;
+    left: 0;
+    bottom:0px;
+    width:100%;
+    margin: 0px;
+    padding: 0 0 0 10px;
+    height:52px;
+    background-color:#e0dcdc;
+    color:#2f2d2c;
+    text-align: left;
+    font-family:"Raleway",sans-serif;
+    font-weight:400;
+
+}
+
+
+.footer { 
+    position: fixed;
+    left: 0;
+    bottom:0px;
+    width:100%;
+    margin: 0px;
+    padding: 0 0 0 10px;
+    height:52px;
+    background-color:#e0dcdc;
+    color:black;
+    text-align: left;
+    font-family:"Raleway",sans-serif;
+    font-weight:400;
+}
+
+
+.navbar{
+  position:sticky;
+  top:0;
+  background-color: #2f2d2c;  
+}
+
+.navbar ul{
+  z-index:1000;
+  display:flex;
+  justify-content:space-evenly;
+  list-style-type:none;
+  align-items: center;
+  flex-wrap: wrap;
+  margin:0 auto;
+  padding:0;
+}
+  
+.navbar ul li{
+  float:left;
+  margin: 10px;
+  font-family:"raleway", sans-serif;
+  font-size:18px;
+  /*
+  color: #2f2d2c;
+  */
+}
+  
+.navbar ul li a{
+  display:block;
+  text-decoration:none;
+  color:#f1f1f1;
+  padding:8px;
+}
+
+.navbar ul li a:hover{
+  color:#f1f1f1;
+  font-weight:600;
+}
+ 
+.navbar ul li a:focus{
+  color:#f1f1f1;
+  font-weight:600;
+}
+
+
+#theme-button {
+background-color: #f1f1f1;
+color: #2f2d2c;
+padding:8px 8px;
+border-radius: 6px;
+cursor: pointer;
+}
+#motion-button {
+background-color: #f1f1f1;
+color: #2f2d2c;
+padding:8px 8px;
+border-radius: 6px;
+cursor: pointer;
+}
+#theme-button:hover{
+    background-color:#47859c;
+    color:#f1f1f1;
+    padding: 8px 8px;
+    border-radius:6px;
+}
+#motion-button:hover{
+    background-color:#47859c;
+    color:#f1f1f1;
+    padding: 8px 8px;
+    border-radius:6px;
+}
+.registrylink p {
+  margin-bottom: 80px;
+}
+.livestream {
+  width:560px;
+  height:315px;
+  display:block;
+  margin: 0 auto 80px auto;
+}
+
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background-color: palevioletred;
+
+ 
+}
+
+.rsvp-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.rsvp-container{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.rsvp-para{
+  width: 50%;
+  padding-right:10px;
+}
+
+.rsvp-participants{
+  width:50%;
+  padding-right:10px;
+}
+
+.form-container {
+  margin: 20px;
+}
+
+#rsvp-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+#rsvp-button{
+    background-color:#c73d34;
+    color: #f1f1f1;               
+    border: none;             
+    padding: 10px 30px;          
+    border-radius: 0px;        
+    cursor: pointer;            
+    text-align: center;
+    margin: 0 10px;
+    min-width: 160px;
+    font-size: 16px;
+    font-family:"raleway", sans-serif;
+    box-sizing:border-box;
+}
+
+#rsvp-button:hover{
+    background-color:#47859c;
+    color:#f1f1f1;
+    font-weight:600;
+    font-family:"raleway", sans-serif;
+}
+
+
+.modal {
+  display: none;   
+  position: fixed; 
+  z-index: 2;      
+  
+  
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  
+  background-color: rgba(0,0,0,0.4); 
+
+  
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+    
+    padding: 50px;
+    width: 55%;
+
+    
+    background-color: lightsteelblue;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Raleway", sans-serif;
+    border-radius: 16px;
+    
+    display: flex;
+    position: relative;
+}
+
+#modal-item {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  text-align:center;
+}
+
+#closebtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+
+
+
+.dark-mode {
+background-color: #2f2d2c;
+color:#f1f1f1;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode ul li {
+  color: #f1f1f1;
+}
+.dark-mode .savethedatebutton {
+  background-color: #2f2d2c;
+  color:#f1f1f1;
+  border: 4px solid #f1f1f1;
+}
+.dark-mode .upperthickerdivider,
+.dark-mode .thickerdivider {
+  border-top: 6px solid #f1f1f1;
+}
+.dark-mode .thinnerdivider{
+  border-top: 1px solid #f1f1f1;
+}
+
+.dark-mode .upperdivider,
+.dark-mode .divider {
+  border-top: 4px solid #f1f1f1;
+}
+
+.dark-mode .horizontaldivider{
+  border-left: 2px solid #f1f1f1;
+}
+
+.dark-mode .rsvpbutton {
+  background-color: #f1f1f1;
+  color: #2f2d2c;
+}
+.dark-mode .navbar{
+  background-color: #f1f1f1;
+}
+
+.dark-mode .navbar ul li a {
+  color: #2f2d2c;
+}
+
+.dark-mode .savethedatebutton:hover {
+  background-color: #c73d34;
+  border: 4px solid #c73d34;
+  color:#2f2d2c;
+}
+
+.dark-mode .rsvpbutton:hover {
+  background-color:#47859c;
+}
+
+.dark-mode #saveseat-button:hover{
+    background-color:#47859c;
+    color:#2f2d2c;
+}
+
+.dark-mode footer p {
+  color: #2f2d2c;
+}
+
+.dark-mode a:visited * {
+  color:#f1f1f1;
+}
+
+.dark-mode a:link {
+    color:#f1f1f1;
+}
+
+.dark-mode a:hover {
+    color: #47859c;
+}
+
+.dark-mode #theme-button {
+  background-color:#2f2d2c;
+  color: #f1f1f1;
+  font-weight: bold;
+}
+
+.dark-mode #motion-button {
+  background-color:#2f2d2c;
+  color: #f1f1f1;
+  font-weight: bold;
+}
+
+.dark-mode #theme-button:hover{
+  background-color: #47859c;
+  color: #f1f1f1;
+  font-weight: bold;
+}
+
+.dark-mode #motion-button:hover{
+  background-color: #47859c;
+  color: #f1f1f1;
+  font-weight: bold;
+}
+.dark-mode #saveseat-button {
+  background-color:#f1f1f1;
+  color: #2f2d2c;
+}
+
+.dark-mode .whattoexpect-container{
+  background-color: #f1f1f1;
+}
+
+.dark-mode .whattoexpect-text li{
+  color: #2f2d2c;
+}
+
+.dark-mode #whattoexpect {
+  color:#2f2d2c;
+}
+
+
+:root {
+    /* Light Mode */
+    --bg-color: #a6a0cf;
+    --text-color: #231942;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
